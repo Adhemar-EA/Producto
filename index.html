@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quinua Orureño - Delicias Andinas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind via CDN (para algunas utilidades) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Estilos personalizados */
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/Quinua.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh;
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #8B4513;
+        }
+        
+        .gallery-img {
+            transition: transform 0.3s ease;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-amber-900 shadow-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <i class="fas fa-mountain me-2"></i>Quinua
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#caracteristicas">Características</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section d-flex align-items-center text-white">
+        <div class="container py-5 mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold mb-4">QUINUA ORUREÑO</h1>
+                    <p class="lead fs-2 mb-5">La auténtica tradición andina en cada bocado</p>
+                    <a href="#contacto" class="btn btn-warning btn-lg px-4 py-2 fw-bold">¡Pruébalo ahora!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="caracteristicas" class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-amber-900">Nuestras Características</h2>
+                <p class="lead text-muted">Descubre lo que hace especial a nuestra quinua</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-leaf feature-icon"></i>
+                        </div>
+                        <h3 class="h4 text-center mb-3">100% Natural</h3>
+                        <p class="text-muted text-center">Elaborado con quinua, naturales de los Andes sin químicos.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-history feature-icon"></i>
+                        </div>
+                        <h3 class="h4 text-center mb-3">Tradición Ancestral</h3>
+                        <p class="text-muted text-center">Preparado con técnicas tradicionales que se han transmitido por generaciones en Oruro.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm p-4">
+                        <div class="text-center mb-3">
+                            <i class="fas fa-heart feature-icon"></i>
+                        </div>
+                        <h3 class="h4 text-center mb-3">Alto en Proteínas</h3>
+                        <p class="text-muted text-center">Rico en proteínas y bajo en grasa, ideal para una alimentación saludable y deportistas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="py-5 bg-gray-100">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-amber-900">Galería</h2>
+                <p class="lead text-muted">Conoce nuestro producto</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img src="img/Fideo.jpg" alt="Charque de llama tradicional" class="img-fluid rounded shadow gallery-img w-100">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/Harina.jpg" alt="Proceso de secado" class="img-fluid rounded shadow gallery-img w-100">
+                </div>
+                <div class="col-md-4">
+                    <img src="img/Leche.jpg" alt="Plato preparado con charque" class="img-fluid rounded shadow gallery-img w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h2 class="display-5 fw-bold text-amber-900 mb-4">Contáctanos</h2>
+                    <p class="lead mb-4">¿Quieres probar nuestro auténtica quinua orureño? Déjanos tus datos y nos pondremos en contacto contigo.</p>
+                    
+                    <div class="mb-4">
+                        <h4 class="h5 fw-bold"><i class="fas fa-map-marker-alt text-amber-700 me-2"></i> Dirección</h4>
+                        <p>Calle Bolívar #123, Oruro, Bolivia</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="h5 fw-bold"><i class="fas fa-phone text-amber-700 me-2"></i> Teléfono</h4>
+                        <p>+591 78616899</p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h4 class="h5 fw-bold"><i class="fas fa-envelope text-amber-700 me-2"></i> Email</h4>
+                        <p>info@quinuaorureño.com</p>
+                    </div>
+                    
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-amber-700"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-amber-700"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-amber-700"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card border-0 shadow p-4">
+                        <h3 class="h4 fw-bold mb-4">Formulario de contacto</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="nombre" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-warning fw-bold w-100 py-2">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-amber-900 text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2023 Quinua Orureño. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
